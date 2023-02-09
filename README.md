@@ -1,3 +1,3 @@
-# goit-markup-hw-05
+# goit-markup-hw-06
 
-site:  https://valpvf.github.io/goit-markup-hw-05/
+site:  https://valpvf.github.io/goit-markup-hw-06/
