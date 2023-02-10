@@ -207,7 +207,7 @@
                   Product Designer
                 </p>
                 <ul class="team-soc-list list grid-list">
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -225,7 +225,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -243,7 +243,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -261,7 +261,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -297,7 +297,7 @@
                   Frontend Developer
                 </p>
                 <ul class="team-soc-list list grid-list">
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -315,7 +315,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -333,7 +333,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -351,7 +351,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -385,7 +385,7 @@
                 </h3>
                 <p class="team-text section-text center">Marketing</p>
                 <ul class="team-soc-list list grid-list">
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -403,7 +403,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -421,7 +421,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -439,7 +439,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -475,7 +475,7 @@
                   UI Designer
                 </p>
                 <ul class="team-soc-list list grid-list">
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -493,7 +493,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -511,7 +511,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -529,7 +529,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="team-soc-item grid-item">
+                  <li class="team-soc-item">
                     <a
                       href="#"
                       class="team-soc-link link grid-list"
@@ -740,13 +740,46 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
+      <!-- is-hidden -->
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-close-svg" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="modal-title">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+          <p class="modal-form-name">Name *</p>
+          <input
+            type="text"
+            class="modal-input-name modal-input"
+            placeholder=""
+            required
+          />
+          <p class="modal-form-name">Phone *</p>
+          <input
+            type="tel"
+            class="modal-input-tel modal-input"
+            title="+380 (99) 111-22-33"
+            placeholder=""
+            required
+          />
+          <p class="modal-form-name">Email</p>
+          <input
+            type="email"
+            class="modal-input-email modal-input"
+            placeholder=""
+          />
+          <p class="modal-form-name">Comment</p>
+          <input
+            type="text"
+            class="modal-input-comment modal-input"
+            placeholder="Text input"
+          />
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
