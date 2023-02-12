@@ -658,9 +658,42 @@ img {
 }
 
 .modal-form {
+  padding-top: 2px;
 }
 
-.modal-form-name {
+.modal-input {
+  width: 100%;
+  padding: 8px 38px;
+  margin: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-input[name="user-comment"] {
+  display: block;
+  height: 120px;
+  padding: 8px 16px;
+  color: rgba(117, 117, 117, 0.5);
+  resize: none;
+}
+
+.modal-input:focus {
+  border-color: #4d5ae5;
+  color: #4d5ae5;
+}
+
+.modal-input-text {
+  display: block;
+  padding: 0 0 8px;
+}
+
+.modal-input-text > span {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.33;
@@ -668,35 +701,20 @@ img {
   color: #8e8f99;
 }
 
-.modal-form-name:not(:first-child) {
-  margin-top: 8px;
-}
-.modal-form-name:first-child {
-  margin-top: 2px;
+
+
+.modal-input-wrap {
+  position: relative;
 }
 
-.modal-input {
-  width: 100%;
-  padding: 8px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #2e2f42;
 }
 
-.modal-input-name {
-}
-.modal-input-tel {
-}
-.modal-input-email {
-}
-
-.modal-input-comment {
-  height: 120px;
-}
-
-.modal-input-comment:placeholder-shown {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  color: rgba(117, 117, 117, 0.5);
-  align-items: self-start;
+.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
 }
