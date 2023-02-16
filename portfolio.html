@@ -86,7 +86,6 @@
       <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Portfolio</h1>
-          <h2 class="visually-hidden">Filter</h2>
           <ul class="filter-list list grid-list">
             <li>
               <button class="filter-btn btn" type="button">
@@ -114,7 +113,6 @@
               </button>
             </li>
           </ul>
-          <h2 class="visually-hidden">Galery</h2>
           <ul class="gallery-list list grid-list">
             <li class="gallery-item grid-item">
               <a class="link" href="#">
@@ -132,9 +130,9 @@
                   </p>
                 </div>
                 <div class="gallery-content">
-                  <h3 class="gallery-caption section-caption">
+                  <h2 class="gallery-caption section-caption">
                     Banking App Interface Concept
-                  </h3>
+                  </h2>
                   <p class="section-text">App</p>
                 </div>
               </a>
@@ -155,9 +153,9 @@
                   </p>
                 </div>
                 <div class="gallery-content">
-                  <h3 class="gallery-caption section-caption">
+                  <h2 class="gallery-caption section-caption">
                     Cashless Payment
-                  </h3>
+                  </h2>
                   <p class="section-text">Marketing</p>
                 </div>
               </a>
@@ -178,9 +176,9 @@
                   </p>
                 </div>
                 <div class="gallery-content">
-                  <h3 class="gallery-caption section-caption">
+                  <h2 class="gallery-caption section-caption">
                     Meditaion App
-                  </h3>
+                  </h2>
                   <p class="section-text">App</p>
                 </div>
               </a>
@@ -201,9 +199,9 @@
                   </p>
                 </div>
                 <div class="gallery-content">
-                  <h3 class="gallery-caption section-caption">
+                  <h2 class="gallery-caption section-caption">
                     Taxi Service
-                  </h3>
+                  </h2>
                   <p class="section-text">Marketing</p>
                 </div>
               </a>
@@ -224,9 +222,9 @@
                   </p>
                 </div>
                 <div class="gallery-content">
-                  <h3 class="gallery-caption section-caption">
+                  <h2 class="gallery-caption section-caption">
                     Screen Illustrations
-                  </h3>
+                  </h2>
                   <p class="section-text">Design</p>
                 </div>
               </a>
@@ -247,9 +245,9 @@
                   </p>
                 </div>
                 <div class="gallery-content">
-                  <h3 class="gallery-caption section-caption">
+                  <h2 class="gallery-caption section-caption">
                     Online Courses
-                  </h3>
+                  </h2>
                   <p class="section-text">Marketing</p>
                 </div>
               </a>
@@ -270,9 +268,9 @@
                   </p>
                 </div>
                 <div class="gallery-content">
-                  <h3 class="gallery-caption section-caption">
+                  <h2 class="gallery-caption section-caption">
                     Instagram Stories Concept
-                  </h3>
+                  </h2>
                   <p class="section-text">Design</p>
                 </div>
               </a>
@@ -293,9 +291,9 @@
                   </p>
                 </div>
                 <div class="gallery-content">
-                  <h3 class="gallery-caption section-caption">
+                  <h2 class="gallery-caption section-caption">
                     Organic Food
-                  </h3>
+                  </h2>
                   <p class="section-text">Web Site</p>
                 </div>
               </a>
@@ -316,9 +314,9 @@
                   </p>
                 </div>
                 <div class="gallery-content">
-                  <h3 class="gallery-caption section-caption">
+                  <h2 class="gallery-caption section-caption">
                     Fresh Coffee
-                  </h3>
+                  </h2>
                   <p class="section-text">Web Site</p>
                 </div>
               </a>
@@ -401,26 +399,22 @@
           </div>
         </div>
         <div class="footer-subscribe">
+          <p class="footer-form-title">Subscribe</p>
           <form class="footer-form">
-            <label class="footer-form-label" for="subscribe">
+            <input
+              class="footer-form-input"
+              id="subscribe"
+              name="subscribe"
+              type="email"
+              placeholder="E-mail *"
+              required
+            />
+            <button class="subscribe-btn btn" type="submit">
               Subscribe
-            </label>
-            <div class="subscribe-wrap">
-              <input
-                class="footer-form-input"
-                id="subscribe"
-                name="subscribe"
-                type="email"
-                placeholder="E-mail *"
-                required
-              />
-              <button class="subscribe-btn btn" type="submit">
-                <span>Subscribe</span>
-                <svg class="submit-icon">
-                  <use href="./images/icons.svg#icon-subscribe"></use>
-                </svg>
-              </button>
-            </div>
+              <svg class="submit-icon">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -432,6 +426,5 @@
       </svg>
       <p>go top</p>
     </a>
-    
   </body>
 </html>

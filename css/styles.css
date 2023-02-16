@@ -123,7 +123,8 @@ img {
 
 .header {
   width: 100%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid var(--accent-clr);
+  /* box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); */
 }
 
 .header-container {
@@ -178,7 +179,7 @@ img {
 
 .active-page::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -303,7 +304,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--dark-clr);
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
 }
 
@@ -412,7 +413,9 @@ img {
   margin-bottom: 72px;
 }
 
-/* .customer-list {} */
+.customer-list {
+  flex-wrap: nowrap;
+}
 
 .customer-item {
   height: 88px;
@@ -596,21 +599,19 @@ img {
   background-color: var(--success-clr);
 }
 
-/* .footer-subscribe {}
-.footer-form {} */
+/* .footer-subscribe {}*/
 
-.footer-form-label {
-  letter-spacing: 0.02em;
-  color: var(--primary-bg-clr);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.subscribe-wrap {
+.footer-form {
   display: flex;
   margin-top: 16px;
   gap: 24px;
+}
+
+.footer-form-title {
+  letter-spacing: 0.02em;
+  color: var(--primary-bg-clr);
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .subscribe-btn {
@@ -675,8 +676,8 @@ img {
   top: 50%;
   left: 50%;
   width: 408px;
-  min-height: 576px;
-  padding: 24px;
+  height: 584px;
+  padding: 72px 24px 24px;
   transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%) scaleY(1);
   border-radius: 4px;
@@ -696,12 +697,13 @@ img {
 }
 
 .modal-close {
-  position: relative;
+  position: absolute;
   display: block;
+  cursor: pointer;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
-  margin-bottom: 24px;
-  margin-left: auto;
   transition: color var(--tra), background-color var(--tra);
   color: #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -731,15 +733,12 @@ img {
   line-height: 1.5;
 }
 
-.modal-form {
-  padding-top: 2px;
-}
-
-/* .modal-list {} */
+/* .modal-form {} */
 
 .modal-input {
   width: 100%;
   margin: 0;
+  height: 40px;
   padding: 8px 38px;
   letter-spacing: 0.04em;
   color: #000000;
@@ -764,7 +763,7 @@ img {
 
 .modal-input-text {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .modal-input-text > span {
@@ -801,6 +800,7 @@ img {
 .modal-text {
   display: flex;
   align-items: baseline;
+  margin-top: 16px;
   margin-bottom: 24px;
   transition: backgraund-color var(--tra), border var(--tra),
     fill var(--tra);
@@ -847,6 +847,8 @@ img {
     color var(--tra);
   color: var(--primary-bg-clr);
   background-color: var(--primary-brand-clr);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .to-top {
